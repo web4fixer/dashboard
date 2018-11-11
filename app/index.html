@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dushboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="container-fluid main-header-container">
+				<div class="header-container">
+					<div class="navbar-header">
+						<span href="#" id="nav-collapse" class="navbar-brand">
+							<img src="img/logo.png" alt="logo">
+						</span>
+						<a id="menuToggle" class="menutoggle" href="#">
+							<i class="fa fa-bars"></i>
+						</a>
+						<div class="navbar">
+							<ul class="menu">
+								<li class="menu__item">
+									<i class=" menu__item-icon"></i>
+									<span class="menu__item-text">Menu</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-1 menu__item-icon"></i>
+									<span class="menu__item-text">Overview</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-analitics-icon menu__item-icon"></i>
+									<span class="menu__item-text">Analitics</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-profile-icon menu__item-icon"></i>
+									<span class="menu__item-text">Your Profile</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-envelope-icon menu__item-icon"></i>
+									<span class="menu__item-text">invoice</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-marketplace-icon menu__item-icon"></i>
+									<span class="menu__item-text">Marketplase</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-projects-icon menu__item-icon"></i>
+									<span class="menu__item-text">Projects</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-inbox-icon menu__item-icon"></i>
+									<span class="menu__item-text">Inbox</span>
+								</li>
+								<li class="menu__item">
+									<i class="icon-support-icon menu__item-icon"></i>
+									<span class="menu__item-text">Suppors</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- header menu here -->
+					<div class="header-menu">
+						<div class="search-block">
+							<form class="search-form">
+								<div class="input-icon-addon"><i class="fas fa-search"></i></div>
+								<input type="search" class="form-control header-search" placeholder="Search">
+							</form>
+						</div>
+						<div class="account-block-wrapper">
+							<div class="account-block">
+								<div class="notify-block-wrapper">
+									<div class="notify-block">
+										<div class="dropdown dropdown-item">
+											<a class="nav-link icon" href="">
+												<span class="nav-link__counter nav-link__counter--mail">4</span>
+												<i class="fas fa-envelope"></i>
+											</a>
+										</div>
+										<div class="dropdown dropdown-item">
+											<a class="nav-link icon" href="">
+												<span class="nav-link__counter nav-link__counter--ring">4</span>
+												<i class="fas fa-bell"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="user-account-wrap">
+									<div class="user-account-block">
+										<div class="account-circle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+	</div>
+	<script src="js/build/all.js"></script>
+	<script>
+        $(function() {
+            var $gamburger = $('#menuToggle');
+            $gamburger.click(function() {
+                $('.menutoggle').toggleClass('active');
+            } )
+        });
+
+	</script>
+</body>
+</html>
