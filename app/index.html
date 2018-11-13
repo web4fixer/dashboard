@@ -3,113 +3,283 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dushboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<div class="page-wrapper">
-		<header class="header">
-			<div class="container-fluid main-header-container">
-				<div class="header-container">
-					<div class="navbar-header">
-						<span href="#" id="nav-collapse" class="navbar-brand">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid main-header-container">
+                <div class="header-container">
+                    <div class="navbar-header">
+                        <span href="#" id="nav-collapse" class="navbar-brand">
 							<img src="img/logo.png" alt="logo">
 						</span>
-						<a id="menuToggle" class="menutoggle" href="#">
-							<i class="fa fa-bars"></i>
-						</a>
-						<div class="navbar">
-							<ul class="menu">
-								<li class="menu__item">
-									<i class=" menu__item-icon"></i>
-									<span class="menu__item-text">Menu</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-1 menu__item-icon"></i>
-									<span class="menu__item-text">Overview</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-analitics-icon menu__item-icon"></i>
-									<span class="menu__item-text">Analitics</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-profile-icon menu__item-icon"></i>
-									<span class="menu__item-text">Your Profile</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-envelope-icon menu__item-icon"></i>
-									<span class="menu__item-text">invoice</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-marketplace-icon menu__item-icon"></i>
-									<span class="menu__item-text">Marketplase</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-projects-icon menu__item-icon"></i>
-									<span class="menu__item-text">Projects</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-inbox-icon menu__item-icon"></i>
-									<span class="menu__item-text">Inbox</span>
-								</li>
-								<li class="menu__item">
-									<i class="icon-support-icon menu__item-icon"></i>
-									<span class="menu__item-text">Suppors</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- header menu here -->
-					<div class="header-menu">
-						<div class="search-block">
-							<form class="search-form">
-								<div class="input-icon-addon"><i class="fas fa-search"></i></div>
-								<input type="search" class="form-control header-search" placeholder="Search">
-							</form>
-						</div>
-						<div class="account-block-wrapper">
-							<div class="account-block">
-								<div class="notify-block-wrapper">
-									<div class="notify-block">
-										<div class="dropdown dropdown-item">
-											<a class="nav-link icon" href="">
+                        <a class="hamburger navbar-header__hamburger-btn"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!-- header menu here -->
+                    <div class="header-menu">
+                        <div class="search-block">
+                            <form class="search-form">
+                                <div class="input-icon-addon"><i class="fas fa-search"></i></div>
+                                <input type="search" class="form-control header-search" placeholder="Search">
+                            </form>
+                        </div>
+                        <div class="account-block-wrapper">
+                            <div class="account-block">
+                                <div class="notify-block-wrapper">
+                                    <div class="notify-block">
+                                        <div class="dropdown dropdown-item">
+                                            <a class="nav-link icon" href="">
 												<span class="nav-link__counter nav-link__counter--mail">4</span>
 												<i class="fas fa-envelope"></i>
 											</a>
-										</div>
-										<div class="dropdown dropdown-item">
-											<a class="nav-link icon" href="">
+                                        </div>
+                                        <div class="dropdown dropdown-item">
+                                            <a class="nav-link icon" href="">
 												<span class="nav-link__counter nav-link__counter--ring">4</span>
 												<i class="fas fa-bell"></i>
 											</a>
-										</div>
-									</div>
-								</div>
-								<div class="user-account-wrap">
-									<div class="user-account-block">
-										<div class="account-circle"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		
-	</div>
-	<script src="js/build/all.js"></script>
-	<script>
-        $(function() {
-            var $gamburger = $('#menuToggle');
-            $gamburger.click(function() {
-                $('.menutoggle').toggleClass('active');
-            } )
-        });
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-account-wrap">
+                                    <div class="user-account-block">
+                                        <div class="account-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <aside class="aside">
+                <h3 class="aside__title">Menu</h3>
+                <ul class="aside__list">
+                    <li class="aside__item">
+                        <a href="#"><i class="fas fa-home"></i>Overview</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="far fa-chart-bar"></i>Analytics</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="fas fa-user"></i>Your Profile</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="far fa-list-alt"></i>Invoice</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="fas fa-briefcase"></i>Marketplace</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="fas fa-project-diagram"></i>Projects</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="fas fa-envelope"></i>Inbox</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="#"><i class="far fa-life-ring"></i>Support</a>
+                    </li>
+                </ul>
+            </aside>
+            <!--end aside-->
+            <div class="main-content">
+                <div class="main-content__header">
+                    <div class="main-content__title">
+                        <h3 class="main-content__title-text">Your Profile</h3>
+                        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                            <ul class="breadcrumb breadcrumb-itemlist">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main-content__analy">
+                        <div class="analy__balansblock">
+                            <div class="balans-text">
+                                <span class="balans__title">My income</span>
+                                <span class="balans__score">$42.457</span>
+                            </div>
+                            <div class="graffic">
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-one"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-two"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-three"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-four"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-five item-graf-red--active"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-six"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-seven"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-eight"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-nine"></div>
+                                </div>
+                                <div class="item-grafic">
+                                    <div class="item-graf-red item-ten"></div>
+                                </div>
 
-	</script>
+                            </div>
+                        </div>
+                        <div class="analy__balansblock">
+                            <div class="balans-text">
+                                <span class="balans__title">Site Traffic</span>
+                                <span class="balans__score">$42.457</span>
+                            </div>
+                            <div class="graffic">
+                                <div class="item-graf item-one"></div>
+                                <div class="item-graf item-two"></div>
+                                <div class="item-graf item-three"></div>
+                                <div class="item-graf item-four"></div>
+                                <div class="item-graf item-five"></div>
+                                <div class="item-graf item-six"></div>
+                                <div class="item-graf item-seven"></div>
+                                <div class="item-graf item-eight"></div>
+                                <div class="item-graf item-nine"></div>
+                                <div class="item-graf item-ten"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile__content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Activity</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Messages</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Settings</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="today-date"><h4>Today</h4></div>
+                                    <div class="schedule">
+                                        <div class="schedule__item">
+                                            <span>ashgdkhashdkjhaskdnasjd</span>
+                                        </div>
+                                        <div class="schedule__item">
+                                            <span>ashgdkhashdkjhaskdnasjd</span>
+                                        </div>
+                                        <div class="schedule__item">
+                                            <span>ashgdkhashdkjhaskdnasjd</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...2</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...3</div>
+                            </div>
+                    </div>
+                    <!--end profile__content-->
+                    <div class="profile__sidebar">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="choose-item">
+                                <a class="item-circle" href="#"></a>
+                                <div class="choose-item__title">
+                                    <h3><a href="#">Druid Wensleydale</a></h3>
+                                    <p>Freelance Designer, Previously TapQ London, United Kingdom</p>
+                                </div>
+                                <div class="choose-item__btnwrap">
+                                    <button class="btnwrap__button-follow">Follow</button>
+                                    <button class="btnwrap__button-edit">Edit profile</button>
+                                </div>
+                                <div class="choose-item__statwrap">
+                                    <div class="stat">
+                                        <div class="item__rang">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <span>Rating</span>
+                                        </div>
+                                        <div class="item__revews">
+                                            <span>74</span>
+                                            <span>revews</span>
+                                        </div>
+                                        <div class="item__revews">
+                                            <span>104</span>
+                                            <span>Cuents</span>
+                                        </div>
+                                        <div class="item__revews">
+                                            <span>170</span>
+                                            <span>finished gigs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-dev">
+                                    <div class="dev__item">
+                                        <div class="dev__product-wrap">
+                                            <img src="img/product-dev-top.png"width="36px" height="38px">
+                                            <div class="dev__text">
+                                                <span>Product designer</span>
+                                                <span>Air Helper - London,United Kingdom</span>
+                                            </div>
+                                        </div>
+                                        <div class="dev__item-date"><span>2016-2017</span></div>
+                                    </div>
+                                    <div class="dev__item">
+                                        <div class="dev__product-wrap">
+                                            <img src="img/product-dev-down.png" width="36px" height="38px">
+                                            <div class="dev__text">
+                                                <span>Intern</span>
+                                                <span>Twett Dock - Berlin, Germany</span>
+                                            </div>
+                                        </div>
+                                        <div class="dev__item-date"><span>2016</span></div>
+                                    </div>
+                                </div>
+                                <div class="weblink">
+                                    <div class="weblink__item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end profile__sidebar-->
+                    </div>
+                    <!--end profile-->
+                </div>
+                <!--end main-content-->
+            </div>
+
+
+
+
+        </main>
+        <div class="schedule">
+            <div class="schedule__item">
+                <span>ashgdkhashdkjhaskdnasjd</span>
+            </div>
+            <div class="schedule__item">
+                <span>ashgdkhashdkjhaskdnasjd</span>
+            </div>
+            <div class="schedule__item">
+                <span>ashgdkhashdkjhaskdnasjd</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>
