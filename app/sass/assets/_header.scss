@@ -11,6 +11,7 @@
 		border-bottom: 1px solid #e5e8ee;
  		box-shadow: 5px 0 4px -3px #f1f1f1;
  		display: flex;
+		justify-content: space-between;
  		align-items:center;
 		width: 26.1%;
 		position: relative;
@@ -28,6 +29,10 @@
 			}
 		}
 	}
+}
+.header-container .navbar-header__hamburger-btn {
+	padding: 30px;
+	cursor: pointer;
 }
 .header-menu {
 	padding-left: 2.44%;
